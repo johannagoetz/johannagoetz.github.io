@@ -6,34 +6,15 @@
     text-align: right;
     border-bottom:15px dotted;
     position: fixed;
+    display: flex;
+    width: 100%
   }
 
   body {
     background-color: #BBD38B;
     margin: 0px;
   }
-  .navbar {
-overflow: hidden;
-background-color: #333;
 
-}
-
-.navbar a {
-float: right;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration:none;
-
-
-}
-
-.navbar a:hover {
-background-color: #ddd;
-color: red;
-
-}
 
 button{
 overflow: hidden;
@@ -53,4 +34,20 @@ text-decoration:none;
 button:hover{
   background-color: #ddd;
 color: red;
+}
+
+.home {
+display: flex;
+}
+
+.zimmer{
+  display:none;
+}
+
+.lage{
+  display: none;
+}
+
+.buchen{
+display: none
 }
