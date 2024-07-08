@@ -3,11 +3,12 @@
     background-color: #356D65;
     margin: 0px;
     padding: 14px;
-    text-align: right;
+    text-align: center;
     border-bottom:15px dotted;
     position: fixed;
     display: flex;
     width: 100%
+    font: size 30px;
   }
 
   body {
