@@ -10,6 +10,13 @@
 body {
   background-color: #BBD38B;
   margin: 0;
+  text-align: left;
+}
+
+img {
+  position: relative;
+  top: 90px;
+  left: 10px;
 }
 
 .navbar {
@@ -18,20 +25,9 @@ body {
 
 }
 
-.navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-
-}
-
 button:hover {
   background-color: #ddd;
   color: red;
-
 }
 
 button {
@@ -44,11 +40,6 @@ button {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-button:hover {
-  background-color: #ddd;
-  color: red;
 }
 
 .home {
