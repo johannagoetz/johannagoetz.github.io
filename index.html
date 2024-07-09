@@ -11,47 +11,77 @@
     <h1 class="navbar">
 
       <div class="buttoncontainer">
-        <button>Home</button>
-        <button>Zimmer</button>
-        <button>Lage</button>
-        <button>Buchen</button>
+
+        <button onclick="showLage()">Lage</button>
+        <button onclick="showZimmer()">Zimmer</button>
+        <button onclick="showHome()">Home</button>
       </div>
 
     </h1>
     <div class="content">
       <section class="home">
-        <img src="Bilder/1737.jpg" width="700px" height="400px">
-        Wilkommen auf der Website des weltbesten Hotels, das nur aus Aufzügen besteht.
+        <img src="Bilder/1737.jpg">
+
+        <h1>
+          Wilkommen auf der Website des weltbesten Hotels, das nur aus Aufzügen besteht
+
+
+        </h1>
+
+
         Wenn du Lust auf ein echtes Abenteuer hast
         und unbedingt etwas neus ausprobieren möchtest, dann besuche uns im neuen Hotel Lift me up!
         Hier bleibt kein Wunsch offen und für jeden ist etwas dabei.
-        Jeder Aufzug ist eine Antiquität und ein wertvolles sammlerstück.
-        von einer kleinen Kammer bis zum riesen Penthouse ist alles dabei.
-        
-       
-        
-
-
-
-        
-    
-        
+        Jeder Aufzug ist eine Antiquität und ein wertvolles Sammlerstück.
+        Von einer kleinen Kammer bis zum riesen Penthouse ist alles dabei.
       </section>
-      
+
       <section class="lage">
         Bla Bla Lage
-        
+
       </section>
-      
+
       <section class="zimmer">
         Hura Zimmer
       </section>
-      
-      <section class ="buchen">
-        Jippi Buchen
-      </section>
-       
+
+
     </div>
+
+    <script>
+      function showHome() {
+        var HomeSection = document.querySelector(".home");
+        HomeSection.style.display = "flex";
+        var ZimmerSection = document.querySelector(".zimmer");
+        ZimmerSection.style.display = "none";
+        var LageSection = document.querySelector(".lage");
+        LageSection.style.display = "none";
+      }
+
+
+
+      function showZimmer() {
+        var HomeSection = document.querySelector(".home");
+        HomeSection.style.display = "none";
+        var ZimmerSection = document.querySelector(".zimmer");
+        ZimmerSection.style.display = "flex";
+        var LageSection = document.querySelector(".lage");
+        LageSection.style.display = "none";
+      }
+
+
+      function showLage() {
+        var HomeSection = document.querySelector(".home");
+        HomeSection.style.display = "none";
+        var ZimmerSection = document.querySelector(".zimmer");
+        ZimmerSection.style.display = "none";
+        var LageSection = document.querySelector(".lage");
+        LageSection.style.display = "flex";
+
+      }
+
+    </script>
+
 
 
   </body>
